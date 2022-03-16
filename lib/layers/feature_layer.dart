@@ -281,13 +281,11 @@ class _FeatureLayerState extends State<FeatureLayer> {
                   width: render.width,
                   height: render.height,
                   point: latLng,
-                  builder: (ctx) => Container(
-                    child: GestureDetector(
-                      onTap: () {
-                        widget.options.onTap!(feature['attributes'], latLng);
-                      },
-                      child: render.builder(ctx),
-                    ),
+                  builder: (ctx) => GestureDetector(
+                    onTap: () {
+                      widget.options.onTap!(feature['attributes'], latLng);
+                    },
+                    child: render.builder(ctx),
                   ),
                 ),
               );
@@ -425,10 +423,8 @@ class _FeatureLayerState extends State<FeatureLayer> {
       }
     }
 
-    return Container(
-      child: Stack(
-        children: elements,
-      ),
+    return Stack(
+      children: elements,
     );
   }
 
@@ -486,10 +482,8 @@ class _FeatureLayerState extends State<FeatureLayer> {
       }
     }
 
-    return Container(
-      child: Stack(
-        children: elements,
-      ),
+    return Stack(
+      children: elements,
     );
   }
 }
