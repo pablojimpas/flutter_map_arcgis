@@ -8,12 +8,12 @@ environment:
   flutter: '>=2.5.0'
 
 dependencies:
+  collection: ^1.15.0
+  dio: ^4.0.0
   flutter:
     sdk: flutter
   flutter_map: ^0.14.0
-  dio: ^4.0.0
   latlong2: ^0.8.1
-  collection: ^1.15.0
   tuple: ^2.0.0
 
 
