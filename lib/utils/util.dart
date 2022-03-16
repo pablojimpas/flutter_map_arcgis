@@ -7,7 +7,7 @@ var _templateRe = RegExp(r'\{ *([\w_-]+) *\}');
 /// Throws an [Exception] if any placeholder remains unresolved.
 String template(String str, Map<String, String> data) {
   return str.replaceAllMapped(_templateRe, (Match match) {
-    var value = data[match.group(1)];
+    final value = data[match.group(1)];
     if (value == null) {
       throw Exception('No value provided for variable ${match.group(1)}');
     } else {
@@ -17,8 +17,8 @@ String template(String str, Map<String, String> data) {
 }
 
 double wrapNum(double x, Tuple2<double, double> range, [bool? includeMax]) {
-  var max = range.item2;
-  var min = range.item1;
-  var d = max - min;
+  final max = range.item2;
+  final min = range.item1;
+  final d = max - min;
   return x == max && includeMax != null ? x : ((x - min) % d + d) % d + min;
 }

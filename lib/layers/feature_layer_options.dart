@@ -90,15 +90,14 @@ class FeatureLayerOptions extends LayerOptions {
   final void Function(dynamic attributes, LatLng location)? onTap;
 
   FeatureLayerOptions(
-      this.url,
-      this.geometryType,{
+    this.url,
+    this.geometryType, {
     this.size = const Size(30, 30),
     this.computeSize,
     this.anchor,
     this.maxClusterRadius = 80,
     this.animationsOptions = const AnimationsOptions(),
-    this.fitBoundsOptions =
-        const FitBoundsOptions(padding: EdgeInsets.all(12.0)),
+    this.fitBoundsOptions = const FitBoundsOptions(padding: EdgeInsets.all(12)),
     this.zoomToBoundsOnClick = true,
     this.centerMarkerOnClick = true,
     this.spiderfyCircleRadius = 40,

@@ -22,6 +22,7 @@ dev_dependencies:
 
   flutter_map_arcgis:
     path: ../
+  very_good_analysis: ^2.4.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
