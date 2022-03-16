@@ -43,7 +43,7 @@ class _FeatureLayerState extends State<FeatureLayer> {
   int targetRequests = 0;
 
   @override
-  initState() {
+  void initState() {
     super.initState();
     _resetView();
     //requestFeatures(widget.map.getBounds());
