@@ -6,11 +6,10 @@ import 'package:collection/collection.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/plugin_api.dart';
+import 'package:flutter_map_arcgis/layers/feature_layer_options.dart';
 import 'package:flutter_map_arcgis/utils/util.dart' as util;
 import 'package:latlong2/latlong.dart';
 import 'package:tuple/tuple.dart';
-
-import 'feature_layer_options.dart';
 
 class FeatureLayer extends StatefulWidget {
   final FeatureLayerOptions options;
