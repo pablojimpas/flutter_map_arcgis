@@ -37,7 +37,9 @@ class AnimationsOptions {
 }
 
 typedef ClusterWidgetBuilder = Widget Function(
-    BuildContext context, List<Marker> markers);
+  BuildContext context,
+  List<Marker> markers,
+);
 
 class FeatureLayerOptions extends LayerOptions {
   /// Cluster size
