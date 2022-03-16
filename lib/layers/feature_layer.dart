@@ -16,7 +16,8 @@ class FeatureLayer extends StatefulWidget {
   final MapState map;
   final Stream<void> stream;
 
-  const FeatureLayer(this.options, this.map, this.stream);
+  const FeatureLayer(this.options, this.map, this.stream, {Key? key})
+      : super(key: key);
 
   @override
   _FeatureLayerState createState() => _FeatureLayerState();
