@@ -13,11 +13,11 @@ dependencies:
   latlong2: ^0.8.1
 
 dev_dependencies:
+  flutter_lints: ^1.0.4
   flutter_map_arcgis:
     path: ../
   flutter_test:
     sdk: flutter
-  very_good_analysis: ^2.4.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -1,9 +1,10 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_arcgis/flutter_map_arcgis.dart';
 import 'package:latlong2/latlong.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -45,7 +46,9 @@ class _MyAppState extends State<MyApp> {
                       'https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Congressional_Districts/FeatureServer/0',
                       'polygon',
                       onTap: (dynamic attributes, LatLng location) {
-                        print(attributes);
+                        if (kDebugMode) {
+                          print(attributes);
+                        }
                       },
                       render: (dynamic attributes) {
                         // You can render by attribute
